@@ -15,14 +15,14 @@ export default class Surprise extends React.Component {
   //function show image
   showImage(){
       this.setState({
-        display: 'imageCall',
+        display: 'imageCall'
       });
   }
   
  //function show btn
   showButton(){
       this.setState({
-        display: 'button',
+        display: 'button'
       });
   }
 
@@ -32,7 +32,8 @@ export default class Surprise extends React.Component {
         return <SurpriseButton onClick={e => this.showImage()}/>;
     }
     else if(this.state.display === 'imageCall'){
-      return <SurpriseImage onClick={e => this.showButton()}/>
+      return <SurpriseImage onClick={e => this.showButton()}/>;
     }
       
+  }
 }
